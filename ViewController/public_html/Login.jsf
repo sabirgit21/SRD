@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:document title="Login.jsf" id="d1">
+    <af:form id="f1">
+    <af:panelGroupLayout id="pgl4" layout="horizontal">
+    <af:outputLabel value="Username" id="ol3"
+                                            inlineStyle="font-weight: bold;font-size: large;"/>
+                                            
+                            <af:inputText contentStyle="font-size: large;" columns="38" id="it1"
+                                          placeholder="User Name" required="true" simple="true"
+                                          requiredMessageDetail="Please enter Username..!"
+                                          binding="#{backingBeanScope.LoginBean.usRName}"/>
+                        </af:panelGroupLayout>
+                        
+                        <af:panelGroupLayout id="pgl6" layout="horizontal">
+                            <af:outputLabel value="Password" id="ol2"
+                                            inlineStyle="font-weight: bold;font-size: large;"/>
+                                            
+                        <af:inputText id="it2" placeholder="Password" required="true"
+                                          contentStyle="font-size: large;" columns="38"
+                                          secret="true" simple="true" 
+                                          requiredMessageDetail="Please enter Password..!"
+                                      binding="#{backingBeanScope.LoginBean.USRPWD}"/>
+                        </af:panelGroupLayout>
+      <af:panelGroupLayout id="pgl1">
+        <af:link text="link 1" id="l1" action="#{backingBeanScope.LoginBean.login_action}"/>
+        
+        
+        
+        
+      </af:panelGroupLayout>
+    </af:form>
+  </af:document>
+</f:view>

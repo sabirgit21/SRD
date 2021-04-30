@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Header.jsf" id="d1">
+        <af:form id="f1">
+        <af:panelGroupLayout id="pgl4" layout="horizontal">
+    <af:outputLabel value="Username" id="ol3"
+                                            inlineStyle="font-weight: bold;font-size: large;"/>
+                <af:button text="Test" id="b1"/>
+                <af:spacer width="10" height="10" id="s1"/>
+                <af:button text="Done" id="b2"/>
+                <af:button text="Great" id="b3"/>
+            </af:panelGroupLayout>
+        </af:form>
+    </af:document>
+</f:view>
